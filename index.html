@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type = 'image/png' href="./src/TY.png">
+    <link rel="stylesheet" href="./src/webCSS/landingPage.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <title>Tyler Yang</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav-bar">
+            <div class="wrapper">
+                <div class="wrapper2">
+                    <div class="TY-icon"><a class="logo" href="index.html"><img src="./src/img/TY.png">
+                    </div>
+                    <div class="header-link">
+                        <a class="hover-1" href="./about.html" >About</a>
+                        <a class="hover-1" href="./projects.html">Projects</a>
+                        <a class="hover-1" href="./src/[Fa21]Tyler_Yang_Resume copy.pdf" download="[Fa21]Tyler_Yang_Resume copy.pdf">Resume</a>
+                    </div>
+                </div>
+                <div class="name">
+                    <h1>TYLER YANG</h1>
+                </div>
+                <div class="socials">
+                    <ul>
+                        <li>
+                          <a href="https://github.com/tylerhyang" target="_blank" >
+                            <i class="fab fa-github icon"></i></a>
+                        </li>
+                        <li>
+                          <a href="https://www.linkedin.com/in/tylerhyang/" target="_blank">
+                            <i class="fab fa-linkedin-in icon"></i></a>
+                        </li>
+                        <li>
+                          <a href="mailto:tyler.yang@berkeley.edu" target="_blank"><i class="far fa-paper-plane icon"></i></a>
+                        </li>
+                      </ul>
+                </div> 
+            </div>
+        </nav>
+        <div class="filler">
+        </div>
+        <div class="hero-wrapper">
+            <div class="hero-video">
+                <img class ="lineUp" src="src/img/heroImg.png" width="800px" height="auto">
+            </div>
+            <div class="welcome-text">
+                <h2 class="lineUp">Hi! Welcome to Tyler's Software Engineering portfolio! </h2>
+            </div>
+        </div>
+        <div class="divider lineUp">
+            <hr>
+        </div>
+        <div class=content-wrapper>
+            <div class="project-content">
+                <h1 class="lineUp">Most Recent Project</h1>
+                <div class="iCard shadow-1 blue-hover lineUp" style="width: 400px; overflow: hidden;">
+                    <img src="src/img/multithread.jpeg" class="iCard-img">
+                    <div>
+                        <h3>
+                            NumC: Matrix Operation Optimization
+                        </h3>
+                        <p class="iCard-txt">
+                            In this project, I developed a lightweight version of the python library
+                            numPy in C.  I focused on developing optimizations for expensive
+                            matrix operations using techniques such as cache efficient organization, 
+                            input vectorization (Intel AVX x256), and thread-level parallelism (OpenMP).
+                        </p>
+                        <div>
+                            Technologies:
+                            <span style="font-size: smaller;">C, Intel AVX Intrinsics, OpenMP</span>
+                        </div>
+                        <p>
+                            <a class="hover-1 see-all lineUp extra" href="#" target="_blank">Code >></a>
+                        </p>
+                    </div>
+                </div>
+                <a class="hover-1 see-all lineUp" href="./projects.html" target="_blank">See all >></a>
+            </div>
+            <div class="current-development">
+                <h1 class="lineUp">Current Project</h2>
+                    <div class="iCard shadow-1 blue-hover lineUp" style="width: 400px; overflow: hidden;">
+                        <img src="src/img/bearchat.jpeg" class="iCard-img">
+                        <div>
+                            <h3>
+                                BearChat
+                            </h3>
+                            <p class="iCard-txt">
+                                In this project, I am developing an interactive chat app hosted on Amazon
+                                Web Services (AWS).  Individuals will be able to create and login into their accounts
+                                with a fully interactive display and functionality will be shipped and distributed
+                                via Docker.
+                            </p>
+                            <div>
+                                Technologies:
+                                <span style="font-size: smaller;">Go, AWS, Docker, HTML, CSS, Rest API</span>
+                            </div>
+                            <p>
+                                <a class="hover-1 see-all lineUp extra" href="#" target="_blank">View Repo >></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

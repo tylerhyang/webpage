@@ -1,0 +1,175 @@
+body {
+    color: white;
+    background-color: #061a2a;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 3%;
+    text-align: center;
+    font-family: "trebuchet MS", sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction:column;
+    /* border: solid red 1px; */
+}
+.nav-bar {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    /* border: 2px solid purple; */
+    display: flex;
+    background-color: #061a2a;
+    color: white;
+    align-items: center;
+}
+.header-link {
+    display: flex;
+    padding: 0px 0px 0px 0px;
+    margin: auto;
+}
+.header-link a {
+    text-decoration:none;
+    padding: 15px;
+    text-align: center;
+    ;
+}
+.logo img {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+}
+.TY-icon {
+    margin:auto;
+}
+.wrapper {
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    /* border: solid 4px blue; */
+}
+.socials {
+    padding-right: 1%;
+}
+
+.wrapper2 {
+    justify-content: right;
+    display:flex;
+}
+
+.hover-1 {
+    color:white;
+    /* border-bottom: 3px solid #061a2a; */
+    transition: all 0.25s linear;
+    position: relative;
+}
+.hover-1:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+    position: absolute;
+    left: 0;
+    bottom: 4px; /* this is to match where the border is */
+    transform-origin: left; 
+    transform: scale(0);
+    transition: 0.25s linear;
+}
+.hover-1:hover:before {
+    transform: scale(1);
+}
+
+.name {
+    margin: auto;
+}
+ul {
+    display: flex;
+    top: 50%;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  ul li a {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 53px;
+    font-size: 30px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 5;
+  }
+  
+  ul li a .icon {
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+  }
+  
+  ul li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+  }
+  
+  ul li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;
+  }
+  
+  ul li a:hover:before {
+    top: 0;
+  }
+  
+  ul li:nth-child(1) a:before{
+    background: black;
+  }
+  
+  ul li:nth-child(2) a:before{
+    background: #0077b5;
+  }
+  
+  ul li:nth-child(3) a:before {
+    background: #84848c;
+  }
+  .filler { /*ensures that content is not covered up by fixed pos navbar*/
+    /* border:green solid 2px; */
+    height:102px;
+    width: 100%;
+}
+  .main-wrapper {
+      display: flex;
+      flex-direction: row;
+      border: red solid 2px;
+  }
+  .headshot {
+      border: green solid 2px;
+      width: 100%;
+  }
+  .description {
+      border: blue solid 2px;
+      width: 100%;
+  }
+  .tech-stack {
+      border: pink solid 2px;
+      align-content: center;
+  }
+  .timeline-wrapper {
+      border: orange solid 2px;
+      align-content: center;
+  }
+  
