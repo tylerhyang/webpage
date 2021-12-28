@@ -178,22 +178,24 @@ ul {
   .main-wrapper {
       display: flex;
       flex-direction: row;
-      border: red solid 2px;
+      /* border: red solid 2px; */
+      padding-bottom: 3%;
   }
   .headshot {
-      border: green solid 2px;
+      /* border: green solid 2px; */
       width: 100%;
   }
   .description {
-      border: blue solid 2px;
+      /* border: blue solid 2px; */
       width: 100%;
   }
   .tech-stack {
-      border: pink solid 2px;
-      align-content: center;
+      /* border: pink solid 2px; */
+      display: flex;
+      flex-direction: row;
+      margin:auto;
   }
   .timeline-wrapper {
-      border: orange solid 2px;
       align-content: center;
   }
   .timeline {
@@ -257,9 +259,9 @@ ul {
     width: 0;
     z-index: 2;
     right: 30px;
-    border: medium solid white;
+    border: medium solid #344454;
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
+    border-color: transparent transparent transparent #344454;
   }
   
   /* Add arrows to the right container (pointing left) */
@@ -271,9 +273,9 @@ ul {
     width: 0;
     z-index: 2;
     left: 30px;
-    border: medium solid white;
+    border: medium solid #344454;
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent #344454 transparent transparent;
   }
   
   /* Fix the circle for containers on the right side */
@@ -328,3 +330,24 @@ ul {
     margin: auto;
     padding-bottom: 3%;
   }
+  .big-name {
+    font-size: xx-large;
+    font-weight: 700;
+  }
+  .body-txt {
+    padding-left: 7%;
+    padding-right:7%;
+  }
+  .intro-txt {
+    text-align: left;
+    line-height: 1.75;
+  }
+
+  .rounded-corners-gradient-borders {
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 80px;
+    background-image: linear-gradient(180deg, #64b3f4 0%, #c2e59c 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
