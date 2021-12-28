@@ -155,6 +155,26 @@ ul {
     height:102px;
     width: 100%;
 }
+  .lineUp {
+    animation: 2s anim-lineUp ease-out;
+}
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+  }
+    20% {
+      opacity: 0;
+  }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+  }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+  }
+}
   .main-wrapper {
       display: flex;
       flex-direction: row;
@@ -267,6 +287,7 @@ ul {
     background-color: #344454;
     position: relative;
     border-radius: 6px;
+    text-align: left;
   }
   
   /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -300,4 +321,10 @@ ul {
     .right {
     left: 0%;
     }
+  }
+  .downspread {
+    list-style-type: circle;
+    flex-direction: column;
+    margin: auto;
+    padding-bottom: 3%;
   }
