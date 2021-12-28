@@ -34,13 +34,16 @@ body {
     text-align: center;
     ;
 }
+.logo {
+  padding-left: 30px;
+}
 .logo img {
     width: 60px;
     height: 60px;
-    margin: auto;
 }
 .TY-icon {
     margin:auto;
+    padding-right:1rem;
 }
 .wrapper {
     display:flex;
