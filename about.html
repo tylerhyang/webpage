@@ -74,7 +74,7 @@
               University of California, Berkeley. My interest in software
               engineering first developed when I wanted to create my own
               minecraft mod -- turns out that this would be the perfect
-              introduction to Java and object oriented programming. I am always
+              introduction to Java and object oriented programming! I am always
               looking to learn something new and to push the boundaries of what
               I know through challenging projects and courses.
             </p>
@@ -227,8 +227,27 @@
         </div>
       </div>
     </div>
+    <div style="padding-top: 3%">
+      <button
+        onclick="topFunction()"
+        id="topBtn"
+        title="To Top"
+        class="bn30 lineUp"
+      >
+        to top
+      </button>
+    </div>
     <footer style="padding-top: 3%; font-size: smaller;">
       Copyright © 2023 | Tyler H Yang
   </footer>
   </body>
+  <script>
+    //Get the button
+    var mybutton = document.getElementById('myBtn');
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
 </html>
